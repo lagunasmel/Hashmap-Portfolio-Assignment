@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7503389-5472-4c35-ad5b-cb313506322e" name="Default Changelist" comment="" />
+    <list default="true" id="a7503389-5472-4c35-ad5b-cb313506322e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/hash_map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_count.py" beforeDir="false" afterPath="$PROJECT_DIR$/word_count.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1csbTPvB6d4e8Hk0f1QsbfO7s48" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,6 +24,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.leinardi.pycharm.pylint.PylintConfigurable" />
   </component>
   <component name="RunManager" selected="Python.word_count">
@@ -126,22 +136,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="180" key="GridCell.Tab.0.bottom" timestamp="1591403636937">
+    <state width="1238" height="129" key="GridCell.Tab.0.bottom" timestamp="1591439613430">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1591403636937" />
-    <state width="1238" height="180" key="GridCell.Tab.0.center" timestamp="1591403636937">
+    <state width="1238" height="129" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1591439613430" />
+    <state width="1238" height="129" key="GridCell.Tab.0.center" timestamp="1591439613429">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1591403636937" />
-    <state width="1238" height="180" key="GridCell.Tab.0.left" timestamp="1591403636936">
+    <state width="1238" height="129" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1591439613429" />
+    <state width="1238" height="129" key="GridCell.Tab.0.left" timestamp="1591439613428">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1591403636936" />
-    <state width="1238" height="180" key="GridCell.Tab.0.right" timestamp="1591403636937">
+    <state width="1238" height="129" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1591439613428" />
+    <state width="1238" height="129" key="GridCell.Tab.0.right" timestamp="1591439613429">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1591403636937" />
+    <state width="1238" height="129" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1591439613429" />
     <state x="141" y="50" key="SettingsEditor" timestamp="1591325019083">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

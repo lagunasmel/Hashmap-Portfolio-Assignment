@@ -214,6 +214,7 @@ class HashMap:
 
         """
         index = self._hash_function(key) % self.capacity
+        # Used the contains method for the linked list to see if it's in the bucket
         if self._buckets[index].contains(key) is not None:
             return True
         else:
@@ -225,6 +226,7 @@ class HashMap:
             The number of empty buckets in the table
         """
         count = 0
+        # Find buckets with empty heads and increment count
         for bucket in self._buckets:
             if bucket.head is None:
                 count += 1
@@ -250,56 +252,3 @@ class HashMap:
             out = out + str(index) + ': ' + str(bucket) + '\n'
             index = index + 1
         return out
-
-
-# test = HashMap(50, hash_function_1)
-# print(test.empty_buckets())
-# print(test.contains_key('key1'))
-
-# for i in range(150):
-#     test.put('str' + str(i), i*100)
-#     if i % 25 == 24:
-#         print(test.empty_buckets(), test.size, test.capacity)
-
-
-# m = HashMap(20, hash_function_1)
-# m.put('key1', 10)
-# print(m.size, m.capacity, m.get('key1'), m.contains_key('key1'))
-# m.resize_table(30)
-# print(m.size, m.capacity, m.get('key1'), m.contains_key('key1'))
-
-# m = HashMap(75, hash_function_2)
-# keys = [i for i in range(1, 1000, 13)]
-#
-# for key in keys:
-#     m.put(str(key), key * 42)
-# print(m.size, m.capacity)
-# for capacity in range(111, 1000, 117):
-#     m.resize_table(capacity)
-#     result = True
-#     for key in keys:
-#         result = result and m.contains_key(str(key))
-#         result = result and not m.contains_key(str(key + 1))
-#     print(capacity, result, m.size, m.capacity, round(m.table_load(), 2))
-#
-
-# m = HashMap(75, hash_function_2)
-# keys = [i for i in range(1, 1000, 13)]
-# for key in keys:
-#     m.put(str(key), key * 42)
-# print(m.size, m.capacity)
-# for capacity in range(111, 1000, 117):
-#     m.resize_table(capacity)
-#     result = True
-#     for key in keys:
-#         result = result and m.contains_key(str(key))
-#         result = result and not m.contains_key(str(key + 1))
-#     print(capacity, result, m.size, m.capacity, round(m.table_load(), 2))
-
-# m = HashMap(50, hash_function_1)
-# print(m.get('key1'))
-# m.put('key1', 10)
-# print(m.get('key1'))
-# m.remove('key1')
-# print(m.get('key1'))
-# m.remove('key4')

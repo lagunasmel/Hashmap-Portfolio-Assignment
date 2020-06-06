@@ -53,28 +53,30 @@ def top_words(source, number):
         for line in f:
             words = rgx.findall(line)
             for w in words:
+                # Convert all words to lowercase prior to insertion
                 w = w.lower()
                 # If the word is already in the hash map, pass the value with a new updated count
-                if ht.contains_key(w) is False:
-                    ht.put(w, 1)
-                else:
+                if ht.contains_key(w):
                     count = ht.get(w) + 1
                     ht.put(w, count)
+                else:
+                    # Otherwise, create a new entry in the hashmap
+                    ht.put(w, 1)
 
     # Add all of the words to the keys set
     for bucket in ht.get_buckets():
+        # Iterate through each bucket/linked list
         curr = bucket.head
         while curr is not None:
+            # Add the keys as a tuple
             keys.add((curr.key, curr.value))
             curr = curr.next
 
-
+    # Cast the set as a list
     all_words = list(keys)
+    # Sort the words according to their value in the tuple
     all_words.sort(key=lambda word: word[1])
     slice_val = (number * -1 - 1)
     top_wds = all_words[:slice_val:-1]
 
     return top_wds
-
-
-print(top_words("alice.txt", 10))  # COMMENT THIS OUT WHEN SUBMITTING TO GRADESCOPE
